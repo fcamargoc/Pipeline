@@ -47,11 +47,12 @@ pipeline {
       }
     }
 
-    stage('checkov') {
-      steps {
-        bat("checkov -s -f main.tf")
-      }
-    }
+  stage('checkov') {
+  steps {
+    bat("C:\\Users\\ASUS\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\checkov.exe -s -f main.tf")
+  }
+}
+
 
   }
 }
