@@ -49,12 +49,7 @@ pipeline {
 
     stage('checkov') {
       steps {
-       script {
-    // Usa la ruta completa para el intérprete de Python y el módulo checkov
-    sh '''
-      "C:\\Users\\ASUS\\AppData\\Local\\Programs\\Python\\Python312\\python.exe" -m checkov -s -f main.tf
-    '''
-}
+     bat("\"C:\\Users\\ASUS\\AppData\\Local\\Programs\\Python\\Python312\\python.exe\" -m checkov -s -f main.tf")
       }
     }
 
