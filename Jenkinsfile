@@ -47,14 +47,11 @@ pipeline {
       }
     }
 
-stage('Checkov Scan') {
-    steps {
-        bat '''
-        echo Ejecutando Checkov con Python correcto...
-        C:\\Users\\ASUS\\AppData\\Local\\Programs\\Python\\Python312\\python.exe -m checkov -s -f main.tf
-        '''
+    stage('checkov') {
+      steps {
+        bat("checkov -s -f main.tf")
+      }
     }
-}
 
 
   }
