@@ -51,7 +51,7 @@ pipeline {
     steps {
         bat '''
         echo Ejecutando Checkov desde CMD...
-        C:\\Users\\ASUS\\AppData\\Roaming\\Python\\Python312\\Scripts\\checkov.cmd -s -f main.tf
+        C:\\Users\\ASUS\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\checkov.cmd -s -f main.tf
         '''
     }
 }
